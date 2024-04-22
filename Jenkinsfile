@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        DOCKER_IMAGE_NAME = 'veera1017/flask-app1016'
+        DOCKER_IMAGE_NAME = 'veera1016/flask-app1017'
     }
 
     stages {
