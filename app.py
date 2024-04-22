@@ -3,6 +3,9 @@ import requests
 
 app = Flask(__name__)
 
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
+
 # Alpha Vantage API URL and API key
 API_KEY = '3USITZI3NPK3ODAY'
 API_URL = 'https://www.alphavantage.co/query'
