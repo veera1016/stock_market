@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy the requirements file
 COPY requirements.txt .
 
-# Install dependencies including Gunicorn
+# Install dependencies including Flask and Gunicorn
 RUN pip install --no-cache-dir -r requirements.txt gunicorn
 
 # Copy the application code into the container
