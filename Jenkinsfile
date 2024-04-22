@@ -19,8 +19,8 @@ pipeline {
             steps {
                 script {
                 withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
-                sh 'docker login -u veera1017 -p ${dockerhubpwd}'
-                sh 'docker push veera1016/flask-app1016'
+                sh 'docker login -u veera1016 -p ${dockerhubpwd}'
+                sh 'docker push veera1016/flask-app1017'
             }
         }
       }
