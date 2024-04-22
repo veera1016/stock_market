@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        DOCKER_IMAGE_NAME = 'veera1016/flask-app1018'
+        DOCKER_IMAGE_NAME = 'veera1016/flask-app1019'
     }
 
     stages {
@@ -20,7 +20,7 @@ pipeline {
                 script {
                 withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
                 sh 'docker login -u veera1016 -p ${dockerhubpwd}'
-                sh 'docker push veera1016/flask-app1018'
+                sh 'docker push veera1016/flask-app1019'
             }
         }
       }
